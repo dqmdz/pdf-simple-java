@@ -70,12 +70,12 @@ public class LicenciaService {
 			cell.setVerticalAlignment(Element.ALIGN_CENTER);
 			cell.setLeading(0, 1.5f);
 			tableHeader.addCell(cell);
+			document.add(tableHeader);
 			
 			paragraph = new Paragraph(licencia.getApellido() + ", " + licencia.getNombre());
 			paragraph.setAlignment(Element.ALIGN_CENTER);
 			document.add(paragraph);
 			
-			document.add(tableHeader);
 //
 			//
 			document.close();
